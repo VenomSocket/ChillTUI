@@ -4,7 +4,7 @@ Fast terminal UI for torrent search via chill.institute and Put.io integration.
 
 ## Demo
 
-[Watch Demo Video](https://github.com/VenomSocket/ChillTUI/releases/download/v1.0.0/chilltui.mp4)
+![ChillTUI Demo](chilltui.gif)
 
 ## Quick Start
 

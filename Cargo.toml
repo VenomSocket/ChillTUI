@@ -1,0 +1,21 @@
+[package]
+name = "chilltui"
+version = "1.0.0"
+edition = "2021"
+authors = ["VenomSocket"]
+description = "Fast terminal UI for torrent search via chill.institute and Put.io integration"
+license = "MIT"
+
+[dependencies]
+crossterm = "0.27"
+ureq = { version = "2.9", default-features = false, features = ["tls"] }
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+serde_json = "1.0"
+directories = "5.0"
+
+[profile.release]
+opt-level = "z"      # Optimize for size
+lto = true           # Link-time optimization
+codegen-units = 1    # Better optimization
+strip = true         # Strip symbols
+panic = "abort"      # Smaller binary

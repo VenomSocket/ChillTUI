@@ -13,8 +13,31 @@ Fast terminal UI for torrent search via chill.institute and Put.io integration.
 
 ## Build from Source
 
+### Dependencies
+
+**Arch Linux**
+```bash
+sudo pacman -S rust
+```
+
+**Ubuntu/Debian**
+```bash
+sudo apt update
+sudo apt install curl build-essential
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
+```
+
+**Fedora**
+```bash
+sudo dnf install rust cargo
+```
+
+### Build
+
 ```bash
 cargo build --release
+sudo cp target/release/chilltui /usr/local/bin/
 ```
 
 ## Usage
